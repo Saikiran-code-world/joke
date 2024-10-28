@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joke maker</title>
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+       
+    }
+    .div {
+        width: 50%;
+        height: 50%;
+        color: bisque;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        text-align: justify;
+        text-align-last:center ;
+        padding: 1%;
+        font-family: cursive;
+        font-size: 2rem;
+        animation: rotate forwards 2s ease-in-out;
+    }
+  
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); color: rgb(74, 181, 181); font-size: 0.5rem;
+
+    }
+    
+    100% {
+        transform: rotate(360deg);color:black;font-size: 2rem;
+        text-shadow: 0 0 5px #ffffff, /* Inner glow */
+               0 0 5px #ffffff, /* Medium glow */
+               0 0 8px #ffffff, /* Outer glow */
+               0 0 10px #00ff00, /* Custom color glow */
+               0 0 20px #00ff00,
+               0 0 30px #00ff00,
+               0 0 60px #00ff00,
+               0 0 80px #00ff00;
+
+
+  
+}
+
+}
+@media only screen and (max-width: 600px) {
+  .div {
+    font-size: 0.5rem;
+    flex-shrink: 1;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    font-weight: lighter;
+
+  }
+}
+    </style>
+</head>
+<body>
+    <script src="index.js"></script>
+</body>
+</html>
